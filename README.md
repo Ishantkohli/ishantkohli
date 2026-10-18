@@ -22,7 +22,13 @@
 
 ---
 
-### 🚀 Quick Terminal Bio
+<div align="center">
+  <img src="assets/terminal-bio.svg" width="100%" alt="Ishant Kohli — Interactive Terminal Bio" />
+</div>
+
+<details>
+  <summary align="center"><b>⚡ Click to inspect raw Developer Object (JavaScript)</b></summary>
+  <br/>
 
 ```javascript
 const IshantKohli = {
@@ -40,6 +46,7 @@ const IshantKohli = {
   sayHello: () => window.open("https://wa.me/919220037676")
 };
 ```
+</details>
 
 ---
 
