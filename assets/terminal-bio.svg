@@ -1,0 +1,314 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-labelledby="tb-title tb-desc">
+  <title id="tb-title">Ishant Kohli — Interactive Terminal Bio</title>
+  <desc id="tb-desc">Terminal bio for Ishant Kohli: Creative Web Developer &amp; Frontend Specialist, BCA (Hons) at TIPS GGSIPU, focusing on Three.js, WebGL 3D UI, and modern full-stack web development.</desc>
+  
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="tb-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#080c14"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </linearGradient>
+
+    <!-- Neon Ambient Glows -->
+    <radialGradient id="tb-glow-cyan" cx="15%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#00f5ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tb-glow-pink" cx="88%" cy="20%" r="65%">
+      <stop offset="0%" stop-color="#ff2a85" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#ff2a85" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tb-glow-purple" cx="85%" cy="85%" r="60%">
+      <stop offset="0%" stop-color="#8a2be2" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#8a2be2" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cyber Scanlines -->
+    <pattern id="tb-scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#00f5ff" opacity="0.025"/>
+    </pattern>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="card-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#131b2e" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0b111e" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <!-- ================= CLIP PATHS (Sequential Typing & Output Reveals) ================= -->
+    <!-- Line 0: $ whoami (7 chars) -->
+    <clipPath id="tb-c0">
+      <rect class="tb-type" x="58" y="85" width="95" height="22" style="animation-delay: 0.5s; animation-duration: 0.35s; animation-timing-function: steps(7);"/>
+    </clipPath>
+    <!-- Line 1: whoami output -->
+    <clipPath id="tb-c1">
+      <rect class="tb-type" x="58" y="108" width="700" height="22" style="animation-delay: 0.95s; animation-duration: 0.35s; animation-timing-function: steps(1);"/>
+    </clipPath>
+
+    <!-- Line 2: $ cat education.txt (19 chars) -->
+    <clipPath id="tb-c2">
+      <rect class="tb-type" x="58" y="133" width="180" height="22" style="animation-delay: 1.55s; animation-duration: 0.45s; animation-timing-function: steps(19);"/>
+    </clipPath>
+    <!-- Line 3: education output -->
+    <clipPath id="tb-c3">
+      <rect class="tb-type" x="58" y="156" width="700" height="22" style="animation-delay: 2.1s; animation-duration: 0.35s; animation-timing-function: steps(1);"/>
+    </clipPath>
+
+    <!-- Line 4: $ echo $OBSESSION (17 chars) -->
+    <clipPath id="tb-c4">
+      <rect class="tb-type" x="58" y="181" width="165" height="22" style="animation-delay: 2.7s; animation-duration: 0.4s; animation-timing-function: steps(17);"/>
+    </clipPath>
+    <!-- Line 5: obsession output -->
+    <clipPath id="tb-c5">
+      <rect class="tb-type" x="58" y="204" width="700" height="22" style="animation-delay: 3.2s; animation-duration: 0.35s; animation-timing-function: steps(1);"/>
+    </clipPath>
+
+    <!-- Line 6: $ cat stack.json (16 chars) -->
+    <clipPath id="tb-c6">
+      <rect class="tb-type" x="58" y="229" width="160" height="22" style="animation-delay: 3.8s; animation-duration: 0.4s; animation-timing-function: steps(16);"/>
+    </clipPath>
+    <!-- Line 7: stack output -->
+    <clipPath id="tb-c7">
+      <rect class="tb-type" x="58" y="252" width="700" height="22" style="animation-delay: 4.3s; animation-duration: 0.35s; animation-timing-function: steps(1);"/>
+    </clipPath>
+
+    <!-- Line 8: $ ls ./leadership (17 chars) -->
+    <clipPath id="tb-c8">
+      <rect class="tb-type" x="58" y="277" width="165" height="22" style="animation-delay: 4.9s; animation-duration: 0.4s; animation-timing-function: steps(17);"/>
+    </clipPath>
+    <!-- Line 9: leadership output -->
+    <clipPath id="tb-c9">
+      <rect class="tb-type" x="58" y="300" width="700" height="22" style="animation-delay: 5.4s; animation-duration: 0.35s; animation-timing-function: steps(1);"/>
+    </clipPath>
+
+    <!-- Line 10: $ ./sayHello.sh (15 chars) -->
+    <clipPath id="tb-c10">
+      <rect class="tb-type" x="58" y="325" width="150" height="22" style="animation-delay: 6.0s; animation-duration: 0.4s; animation-timing-function: steps(15);"/>
+    </clipPath>
+    <!-- Line 11: contact output -->
+    <clipPath id="tb-c11">
+      <rect class="tb-type" x="58" y="348" width="700" height="22" style="animation-delay: 6.5s; animation-duration: 0.35s; animation-timing-function: steps(1);"/>
+    </clipPath>
+    <!-- Line 12: active prompt -->
+    <clipPath id="tb-c12">
+      <rect class="tb-type" x="58" y="370" width="30" height="22" style="animation-delay: 7.0s; animation-duration: 0.1s; animation-timing-function: steps(1);"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .tb-mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, Menlo, Monaco, monospace; }
+    .tb-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    
+    .tb-type {
+      transform-box: fill-box;
+      transform-origin: left center;
+      animation-name: tb-type-anim;
+      animation-fill-mode: both;
+    }
+    
+    .tb-card {
+      animation: tb-card-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    
+    .tb-fade-window {
+      animation: tb-fade-in 0.7s ease both;
+    }
+    
+    @keyframes tb-type-anim {
+      0% { transform: scaleX(0); }
+      85%, 100% { transform: scaleX(1); }
+    }
+    
+    @keyframes tb-fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    @keyframes tb-card-in {
+      from { opacity: 0; transform: translateX(30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    
+    @keyframes tb-pulse {
+      0%, 100% { stroke-opacity: 0.18; }
+      50% { stroke-opacity: 0.38; }
+    }
+    
+    .tb-border-glow {
+      animation: tb-pulse 4s ease-in-out infinite;
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+      .tb-type, .tb-card, .tb-fade-window, .tb-border-glow { animation: none !important; }
+    }
+  </style>
+
+  <!-- Outer Card Container -->
+  <rect width="1200" height="430" rx="20" fill="url(#tb-bg)"/>
+  <rect width="1200" height="430" rx="20" fill="url(#tb-glow-cyan)"/>
+  <rect width="1200" height="430" rx="20" fill="url(#tb-glow-pink)"/>
+  <rect width="1200" height="430" rx="20" fill="url(#tb-glow-purple)"/>
+  <rect width="1200" height="430" rx="20" fill="url(#tb-scan)"/>
+  <rect x="0.5" y="0.5" width="1199" height="429" rx="19.5" fill="none" stroke="#00f5ff" stroke-opacity="0.2" class="tb-border-glow"/>
+
+  <!-- ================= TERMINAL WINDOW (LEFT) ================= -->
+  <g class="tb-fade-window">
+    <!-- Terminal Background & Border -->
+    <rect x="36" y="34" width="764" height="362" rx="14" fill="#080c14" stroke="#00f5ff" stroke-opacity="0.25"/>
+    <rect x="36" y="34" width="764" height="362" rx="14" fill="url(#tb-scan)"/>
+    
+    <!-- Title Bar -->
+    <path d="M36 48 a14 14 0 0 1 14 -14 H786 a14 14 0 0 1 14 14 V72 H36 Z" fill="#0f1524"/>
+    <line x1="36" y1="72" x2="800" y2="72" stroke="#00f5ff" stroke-opacity="0.18"/>
+    
+    <!-- Window Controls (macOS style with vibrant colors) -->
+    <circle cx="58" cy="53" r="5" fill="#ff5f56"/>
+    <circle cx="76" cy="53" r="5" fill="#ffbd2e"/>
+    <circle cx="94" cy="53" r="5" fill="#27c93f"/>
+    
+    <!-- Terminal Title -->
+    <text class="tb-mono" x="418" y="57" text-anchor="middle" font-size="11.5" letter-spacing="1.5" fill="#7d8b9f">ishant@creative-dev: ~/portfolio (zsh)</text>
+  </g>
+
+  <!-- Terminal Content Lines -->
+  <g class="tb-mono" font-size="13">
+    <!-- Line 0: whoami -->
+    <g clip-path="url(#tb-c0)">
+      <text x="60" y="100" fill="#00f5ff" font-weight="600">$</text>
+      <text x="78" y="100" fill="#ffffff">whoami</text>
+    </g>
+    <!-- Line 1: whoami output -->
+    <g clip-path="url(#tb-c1)">
+      <text x="60" y="122" fill="#ff2a85" font-weight="bold">→</text>
+      <text x="80" y="122" fill="#f1f5f9" font-weight="600">Ishant Kohli</text>
+      <text x="178" y="122" fill="#64748b">·</text>
+      <text x="194" y="122" fill="#94a3b8">Creative Web Developer &amp; Frontend Specialist</text>
+    </g>
+
+    <!-- Line 2: education -->
+    <g clip-path="url(#tb-c2)">
+      <text x="60" y="148" fill="#00f5ff" font-weight="600">$</text>
+      <text x="78" y="148" fill="#ffffff">cat education.txt</text>
+    </g>
+    <!-- Line 3: education output -->
+    <g clip-path="url(#tb-c3)">
+      <text x="60" y="170" fill="#ff2a85" font-weight="bold">→</text>
+      <text x="80" y="170" fill="#cbd5e1">BCA (Hons) @ Trinity Institute of Professional Studies (GGSIPU)</text>
+    </g>
+
+    <!-- Line 4: obsession -->
+    <g clip-path="url(#tb-c4)">
+      <text x="60" y="196" fill="#00f5ff" font-weight="600">$</text>
+      <text x="78" y="196" fill="#ffffff">echo $OBSESSION</text>
+    </g>
+    <!-- Line 5: obsession output -->
+    <g clip-path="url(#tb-c5)">
+      <text x="60" y="218" fill="#ff2a85" font-weight="bold">→</text>
+      <text x="80" y="218" fill="#00f5ff" font-weight="500">Three.js</text>
+      <text x="150" y="218" fill="#64748b">·</text>
+      <text x="164" y="218" fill="#e2e8f0">WebGL 3D Interactive UI</text>
+      <text x="350" y="218" fill="#64748b">·</text>
+      <text x="364" y="218" fill="#ec4899">Cyberpunk &amp; Glassmorphism</text>
+    </g>
+
+    <!-- Line 6: stack -->
+    <g clip-path="url(#tb-c6)">
+      <text x="60" y="244" fill="#00f5ff" font-weight="600">$</text>
+      <text x="78" y="244" fill="#ffffff">cat stack.json</text>
+    </g>
+    <!-- Line 7: stack output -->
+    <g clip-path="url(#tb-c7)">
+      <text x="60" y="266" fill="#ff2a85" font-weight="bold">→</text>
+      <text x="80" y="266" fill="#facc15">JavaScript</text>
+      <text x="168" y="266" fill="#64748b">·</text>
+      <text x="182" y="266" fill="#38bdf8">TypeScript</text>
+      <text x="270" y="266" fill="#64748b">·</text>
+      <text x="284" y="266" fill="#a78bfa">Kotlin</text>
+      <text x="340" y="266" fill="#64748b">·</text>
+      <text x="354" y="266" fill="#cbd5e1">HTML5 / Modern CSS</text>
+      <text x="515" y="266" fill="#64748b">·</text>
+      <text x="529" y="266" fill="#818cf8">PHP / SQL</text>
+    </g>
+
+    <!-- Line 8: leadership -->
+    <g clip-path="url(#tb-c8)">
+      <text x="60" y="292" fill="#00f5ff" font-weight="600">$</text>
+      <text x="78" y="292" fill="#ffffff">ls ./leadership</text>
+    </g>
+    <!-- Line 9: leadership output -->
+    <g clip-path="url(#tb-c9)">
+      <text x="60" y="314" fill="#ff2a85" font-weight="bold">→</text>
+      <text x="80" y="314" fill="#34d399">ALFA (Coding Club TIPS)</text>
+      <text x="282" y="314" fill="#64748b">·</text>
+      <text x="296" y="314" fill="#60a5fa">Internshala Partner (ISP)</text>
+      <text x="502" y="314" fill="#64748b">·</text>
+      <text x="516" y="314" fill="#cbd5e1">Ex-Campus Mantri GFG</text>
+    </g>
+
+    <!-- Line 10: contact -->
+    <g clip-path="url(#tb-c10)">
+      <text x="60" y="340" fill="#00f5ff" font-weight="600">$</text>
+      <text x="78" y="340" fill="#ffffff">./sayHello.sh</text>
+    </g>
+    <!-- Line 11: contact output -->
+    <g clip-path="url(#tb-c11)">
+      <text x="60" y="362" fill="#ff2a85" font-weight="bold">→</text>
+      <text x="80" y="362" fill="#22c55e">WhatsApp Direct (+91 9220037676)</text>
+      <text x="330" y="362" fill="#64748b">·</text>
+      <text x="344" y="362" fill="#38bdf8">ishantkohli.me</text>
+      <text x="465" y="362" fill="#64748b">·</text>
+      <text x="479" y="362" fill="#f43f5e">Open for epic 3D &amp; Web builds 🚀</text>
+    </g>
+
+    <!-- Active Terminal Prompt & Indefinite Blinking Cursor -->
+    <g clip-path="url(#tb-c12)">
+      <text x="60" y="384" fill="#00f5ff" font-weight="600">$</text>
+    </g>
+    <rect x="76" y="373" width="8" height="13" rx="1" fill="#00f5ff" style="opacity: 0;">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.51;1" dur="1s" begin="7.0s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ================= FEATURE HIGHLIGHT CARDS (RIGHT) ================= -->
+  <!-- Card 1: Three.js & 3D WebGL -->
+  <g class="tb-card" style="animation-delay: 1.0s;">
+    <g transform="translate(826, 34)">
+      <!-- Card Body -->
+      <rect width="338" height="106" rx="14" fill="url(#card-grad)" stroke="#00f5ff" stroke-opacity="0.25"/>
+      <rect x="0" y="0" width="4" height="106" rx="2" fill="#00f5ff"/>
+      
+      <!-- Card Content -->
+      <text class="tb-mono" x="22" y="28" font-size="10" letter-spacing="2" font-weight="bold" fill="#00f5ff">CURRENT OBSESSION</text>
+      <text class="tb-sans" x="22" y="60" font-size="24" font-weight="700" fill="#f8fafc">Three.js &amp; 3D Web</text>
+      <text class="tb-sans" x="22" y="86" font-size="12" fill="#94a3b8">Interactive WebGL · Shaders · Cyberpunk UI</text>
+    </g>
+  </g>
+
+  <!-- Card 2: Core Stack -->
+  <g class="tb-card" style="animation-delay: 1.6s;">
+    <g transform="translate(826, 162)">
+      <!-- Card Body -->
+      <rect width="338" height="106" rx="14" fill="url(#card-grad)" stroke="#ff2a85" stroke-opacity="0.25"/>
+      <rect x="0" y="0" width="4" height="106" rx="2" fill="#ff2a85"/>
+      
+      <!-- Card Content -->
+      <text class="tb-mono" x="22" y="28" font-size="10" letter-spacing="2" font-weight="bold" fill="#ff2a85">PRIMARY TECH STACK</text>
+      <text class="tb-sans" x="22" y="60" font-size="24" font-weight="700" fill="#f8fafc">JavaScript &amp; TS</text>
+      <text class="tb-sans" x="22" y="86" font-size="12" fill="#94a3b8">Modern CSS · Kotlin · Responsive &amp; Fast</text>
+    </g>
+  </g>
+
+  <!-- Card 3: Leadership & Impact -->
+  <g class="tb-card" style="animation-delay: 2.2s;">
+    <g transform="translate(826, 290)">
+      <!-- Card Body -->
+      <rect width="338" height="106" rx="14" fill="url(#card-grad)" stroke="#a855f7" stroke-opacity="0.25"/>
+      <rect x="0" y="0" width="4" height="106" rx="2" fill="#a855f7"/>
+      
+      <!-- Card Content -->
+      <text class="tb-mono" x="22" y="28" font-size="10" letter-spacing="2" font-weight="bold" fill="#a855f7">LEADERSHIP &amp; COMMUNITY</text>
+      <text class="tb-sans" x="22" y="60" font-size="24" font-weight="700" fill="#f8fafc">ALFA &amp; Mentorship</text>
+      <text class="tb-sans" x="22" y="86" font-size="12" fill="#94a3b8">Coding Club Core · Internshala Partner · GFG</text>
+    </g>
+  </g>
+</svg>
